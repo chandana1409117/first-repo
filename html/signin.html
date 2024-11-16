@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    
+    /* Container Styles */
+    .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    fieldset {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fafafa;
+    }
+    
+    legend {
+        font-weight: bold;
+        font-size: 18px;
+        color: #007bff;
+        padding: 0 10px;
+    }
+    
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    label {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    input, select {
+        padding: 12px;
+        width: 100%;
+        margin-top: 6px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 8px;
+    }
+    
+    input:focus, select:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+    
+    .submit-btn {
+        padding: 12px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+    }
+    
+    .submit-btn:hover {
+        background-color: #218838;
+    }
+    
+    form a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    form a:hover {
+        text-decoration: underline;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hospital Patient Registration</h2>
+        <form action="#" method="POST" class="form">
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Contact Information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+            </fieldset>
+
+            <!-- Address -->
+            <fieldset>
+                <legend>Address</legend>
+                <div class="form-group">
+                    <label for="address">Street Address:</label>
+                    <input type="text" id="address" name="address" required placeholder="Enter your street address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required placeholder="Enter your city">
+                </div>
+                <div class="form-group">
+                    <label for="zip">Postal Code:</label>
+                    <input type="text" id="zip" name="zip" required placeholder="Enter postal code">
+                </div>
+            </fieldset>
+
+            <!-- Emergency Contact -->
+            <fieldset>
+                <legend>Emergency Contact</legend>
+                <div class="form-group">
+                    <label for="emergency-name">Emergency Contact Name:</label>
+                    <input type="text" id="emergency-name" name="emergency-name" required placeholder="Enter emergency contact name">
+                </div>
+                <div class="form-group">
+                    <label for="emergency-phone">Emergency Contact Phone:</label>
+                    <input type="tel" id="emergency-phone" name="emergency-phone" required placeholder="Enter emergency contact phone">
+                </div>
+            </fieldset>
+
+            <!-- Consent -->
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>I agree to the terms and conditions
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<!--<div class="su-page">
+    <img src="https://cdn.pixabay.com/photo/2016/08/29/09/22/register-1627729_1280.png" width="200px" height="200px" alt="">
+
+</div>
+
+    
